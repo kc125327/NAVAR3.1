@@ -22,7 +22,6 @@ Partial Class MenuZel
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuZel))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnEasy = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
@@ -33,7 +32,7 @@ Partial Class MenuZel
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Image = Global.Final_Project.My.Resources.Resources.menuScreen
         Me.PictureBox1.Location = New System.Drawing.Point(97, 59)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(1244, 739)
@@ -43,16 +42,20 @@ Partial Class MenuZel
         '
         'btnEasy
         '
-        Me.btnEasy.Location = New System.Drawing.Point(903, 552)
+        Me.btnEasy.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnEasy.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEasy.Location = New System.Drawing.Point(953, 640)
         Me.btnEasy.Name = "btnEasy"
         Me.btnEasy.Size = New System.Drawing.Size(75, 33)
         Me.btnEasy.TabIndex = 1
         Me.btnEasy.Text = "Easy"
-        Me.btnEasy.UseVisualStyleBackColor = True
+        Me.btnEasy.UseVisualStyleBackColor = False
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(984, 552)
+        Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnExit.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.btnExit.Location = New System.Drawing.Point(1034, 640)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 33)
         Me.btnExit.TabIndex = 2
@@ -61,21 +64,25 @@ Partial Class MenuZel
         '
         'btnNormal
         '
-        Me.btnNormal.Location = New System.Drawing.Point(822, 552)
+        Me.btnNormal.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnNormal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnNormal.Location = New System.Drawing.Point(872, 640)
         Me.btnNormal.Name = "btnNormal"
         Me.btnNormal.Size = New System.Drawing.Size(75, 33)
         Me.btnNormal.TabIndex = 3
         Me.btnNormal.Text = "Normal"
-        Me.btnNormal.UseVisualStyleBackColor = True
+        Me.btnNormal.UseVisualStyleBackColor = False
         '
         'btnHard
         '
-        Me.btnHard.Location = New System.Drawing.Point(741, 552)
+        Me.btnHard.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnHard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnHard.Location = New System.Drawing.Point(791, 640)
         Me.btnHard.Name = "btnHard"
-        Me.btnHard.Size = New System.Drawing.Size(75, 36)
+        Me.btnHard.Size = New System.Drawing.Size(75, 33)
         Me.btnHard.TabIndex = 4
         Me.btnHard.Text = "Hard"
-        Me.btnHard.UseVisualStyleBackColor = True
+        Me.btnHard.UseVisualStyleBackColor = False
         '
         'MenuZel
         '
