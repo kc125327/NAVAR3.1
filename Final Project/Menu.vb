@@ -3,6 +3,7 @@
         Me.Close()
     End Sub
     Private Sub btnEasy_Click(sender As Object, e As EventArgs) Handles btnEasy.Click
+        My.Computer.Audio.Play(My.Resources.thePretender, AudioPlayMode.BackgroundLoop)
         Tutorial.Timer1.Interval = 400
         Tutorial.Timer2.Interval = 400
         Tutorial.Timer3.Interval = 400
@@ -27,6 +28,7 @@
 
     End Sub
     Private Sub btnNormal_Click(sender As Object, e As EventArgs) Handles btnNormal.Click
+        My.Computer.Audio.Play(My.Resources.sweetChildOMine, AudioPlayMode.BackgroundLoop)
         Tutorial.Timer1.Interval = 300
         Tutorial.Timer2.Interval = 300
         Tutorial.Timer3.Interval = 300
@@ -42,6 +44,7 @@
         Tutorial.ShowDialog()
     End Sub
     Private Sub btnHard_Click(sender As Object, e As EventArgs) Handles btnHard.Click
+        My.Computer.Audio.Play(My.Resources.hated, AudioPlayMode.BackgroundLoop)
         Tutorial.Timer1.Interval = 50
         Tutorial.Timer2.Interval = 50
         Tutorial.Timer3.Interval = 50

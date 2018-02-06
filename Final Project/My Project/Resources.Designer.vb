@@ -73,6 +73,15 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         '''</summary>
+        Friend ReadOnly Property hated() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("hated", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
         Friend ReadOnly Property Hero_Of_Inspiration_Medley_1_() As System.IO.UnmanagedMemoryStream
             Get
                 Return ResourceManager.GetStream("Hero_Of_Inspiration_Medley_1_", resourceCulture)
@@ -112,10 +121,38 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property menuScreen() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("menuScreen", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Right4() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Right4", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property sweetChildOMine() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("sweetChildOMine", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property thePretender() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("thePretender", resourceCulture)
             End Get
         End Property
         
