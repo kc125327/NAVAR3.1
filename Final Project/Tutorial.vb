@@ -91,6 +91,8 @@
         obsticle13.Visible = False
         obsticle14.Visible = False
         obsticle15.Visible = False
+
+
         If testcollision(playerUp, obsticle) = True Then ' Return player to previous spot when he runs into wall
             playerUp.Top = prevj
             playerUp.Left = prevu
@@ -111,7 +113,10 @@
             playerUp.Top = prevj
             playerUp.Left = prevu
         End If
-
+        If testcollision(playerUp, obsticle6) = True Then
+            playerUp.Top = prevj
+            playerUp.Left = prevu
+        End If
         If testcollision(playerUp, obsticle7) = True Then
             playerUp.Top = prevj
             playerUp.Left = prevu
@@ -128,12 +133,31 @@
             playerUp.Top = prevj
             playerUp.Left = prevu
         End If
+        If testcollision(playerUp, obsticle11) = True Then
+            playerUp.Top = prevj
+            playerUp.Left = prevu
+        End If
 
         If testcollision(playerUp, obsticle12) = True Then
             playerUp.Top = prevj
             playerUp.Left = prevu
         End If
-
+        If testcollision(playerUp, obsticle13) = True Then
+            playerUp.Top = prevj
+            playerUp.Left = prevu
+        End If
+        If testcollision(playerUp, obsticle13) = True Then
+            playerUp.Top = prevj
+            playerUp.Left = prevu
+        End If
+        If testcollision(playerUp, obsticle14) = True Then
+            playerUp.Top = prevj
+            playerUp.Left = prevu
+        End If
+        If testcollision(playerUp, obsticle15) = True Then
+            playerUp.Top = prevj
+            playerUp.Left = prevu
+        End If
 
         If testcollision(playerDown, obsticle) = True Then ' Return player to previous spot when he runs into wall
             playerDown.Top = prevw
@@ -155,6 +179,10 @@
             playerDown.Top = prevw
             playerDown.Left = preve
         End If
+        If testcollision(playerDown, obsticle6) = True Then
+            playerDown.Top = prevw
+            playerDown.Left = preve
+        End If
 
         If testcollision(playerDown, obsticle7) = True Then
             playerDown.Top = prevw
@@ -172,7 +200,23 @@
             playerDown.Top = prevw
             playerDown.Left = preve
         End If
+        If testcollision(playerDown, obsticle11) = True Then
+            playerDown.Top = prevw
+            playerDown.Left = preve
+        End If
         If testcollision(playerDown, obsticle12) = True Then
+            playerDown.Top = prevw
+            playerDown.Left = preve
+        End If
+        If testcollision(playerDown, obsticle13) = True Then
+            playerDown.Top = prevw
+            playerDown.Left = preve
+        End If
+        If testcollision(playerDown, obsticle14) = True Then
+            playerDown.Top = prevw
+            playerDown.Left = preve
+        End If
+        If testcollision(playerDown, obsticle15) = True Then
             playerDown.Top = prevw
             playerDown.Left = preve
         End If
@@ -199,6 +243,10 @@
             playerLeft.Top = prevy
             playerLeft.Left = prevx
         End If
+        If testcollision(playerLeft, obsticle6) = True Then
+            playerLeft.Top = prevy
+            playerLeft.Left = prevx
+        End If
 
         If testcollision(playerLeft, obsticle7) = True Then
             playerLeft.Top = prevy
@@ -216,7 +264,23 @@
             playerLeft.Top = prevy
             playerLeft.Left = prevx
         End If
+        If testcollision(playerLeft, obsticle11) = True Then
+            playerLeft.Top = prevy
+            playerLeft.Left = prevx
+        End If
         If testcollision(playerLeft, obsticle12) = True Then
+            playerLeft.Top = prevy
+            playerLeft.Left = prevx
+        End If
+        If testcollision(playerLeft, obsticle13) = True Then
+            playerLeft.Top = prevy
+            playerLeft.Left = prevx
+        End If
+        If testcollision(playerLeft, obsticle14) = True Then
+            playerLeft.Top = prevy
+            playerLeft.Left = prevx
+        End If
+        If testcollision(playerLeft, obsticle15) = True Then
             playerLeft.Top = prevy
             playerLeft.Left = prevx
         End If
@@ -241,6 +305,10 @@
             playerRight.Top = prevr
             playerRight.Left = prevt
         End If
+        If testcollision(playerRight, obsticle6) = True Then
+            playerRight.Top = prevr
+            playerRight.Left = prevt
+        End If
 
         If testcollision(playerRight, obsticle7) = True Then
             playerRight.Top = prevr
@@ -258,13 +326,26 @@
             playerRight.Top = prevr
             playerRight.Left = prevt
         End If
+        If testcollision(playerRight, obsticle11) = True Then
+            playerRight.Top = prevr
+            playerRight.Left = prevt
+        End If
         If testcollision(playerRight, obsticle12) = True Then
             playerRight.Top = prevr
             playerRight.Left = prevt
         End If
-
-
-
+        If testcollision(playerRight, obsticle13) = True Then
+            playerRight.Top = prevr
+            playerRight.Left = prevt
+        End If
+        If testcollision(playerRight, obsticle14) = True Then
+            playerRight.Top = prevr
+            playerRight.Left = prevt
+        End If
+        If testcollision(playerRight, obsticle15) = True Then
+            playerRight.Top = prevr
+            playerRight.Left = prevt
+        End If
 
         If testcollision(playerDown, Dungeon) = True Then
             Dungeon_1.ShowDialog()

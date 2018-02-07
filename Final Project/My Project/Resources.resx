@@ -121,6 +121,9 @@
   <data name="Title_Theme" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Title Theme.url;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Firegifthat-works" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Firegifthat-works.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="LinkDown1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LinkDown2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,7 +139,16 @@
   <data name="Hero_Of_Inspiration_Medley_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hero_Of_Inspiration_Medley_1_.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Firegifthat-works" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Firegifthat-works.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menuScreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menuScreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hated" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hated.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sweetChildOMine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sweetChildOMine.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="thePretender" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\thePretender.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
