@@ -547,14 +547,14 @@
             picHitbox1.Left += 375
         End If
         'monster 1 end
-        If picMonster4.Location.X > 50 Then 'monster 4 start
+        If picMonster4.Location.X > 250 Then 'monster 4 start
             picMonster4.Left -= 50
-        ElseIf picMonster4.Location.X < 300 Then
+        ElseIf picMonster4.Location.X < 500 Then
             picMonster4.Left += 375
         End If
-        If picHitbox4.Location.X > 50 Then
+        If picHitbox4.Location.X > 250 Then
             picHitbox4.Left -= 50
-        ElseIf picHitbox4.Location.X < 300 Then
+        ElseIf picHitbox4.Location.X < 500 Then
             picHitbox4.Left += 375
         End If
         'monster 4 end
