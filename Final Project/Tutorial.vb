@@ -1,6 +1,8 @@
 ﻿Public Class Tutorial
     Dim Mon1kill As Integer = 0
     Dim Mon2kill As Integer = 0
+    Dim Mon3kill As Integer = 0
+    Dim Mon4kill As Integer = 0
 
     Private Sub Tutorial_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         Dim prevy As Integer = playerUp.Top
@@ -384,6 +386,33 @@
         If testcollision(picMonster2, playerLeft) = True Then
             PlayerStats.numHealth = PlayerStats.numHealth - 3
         End If
+
+        If testcollision(picMonster3, playerDown) Then
+            PlayerStats.numHealth = PlayerStats.numHealth - 3
+        End If
+        If testcollision(picMonster3, playerUp) Then
+            PlayerStats.numHealth = PlayerStats.numHealth - 3
+        End If
+        If testcollision(picMonster3, playerRight) = True Then
+            PlayerStats.numHealth = PlayerStats.numHealth - 3
+        End If
+        If testcollision(picMonster3, playerLeft) = True Then
+            PlayerStats.numHealth = PlayerStats.numHealth - 3
+        End If
+
+
+        If testcollision(picMonster4, playerDown) Then
+            PlayerStats.numHealth = PlayerStats.numHealth - 3
+        End If
+        If testcollision(picMonster4, playerUp) Then
+            PlayerStats.numHealth = PlayerStats.numHealth - 3
+        End If
+        If testcollision(picMonster4, playerRight) = True Then
+            PlayerStats.numHealth = PlayerStats.numHealth - 3
+        End If
+        If testcollision(picMonster4, playerLeft) = True Then
+            PlayerStats.numHealth = PlayerStats.numHealth - 3
+        End If
         If Mon1kill = 1 Then
             If testcollision(playerDown, picHitbox1) = True Then
                 Timer2.Enabled = False
@@ -428,6 +457,52 @@
                 picMonster2.Left = 0
             End If
         End If
+        If Mon3kill = 1 Then 'monster 3
+            If testcollision(playerDown, picHitbox3) = True Then
+                Timer3.Enabled = False
+                picMonster2.Visible = False
+                picMonster2.Left = 0
+            End If
+            If testcollision(playerUp, picHitbox3) = True Then
+                Timer3.Enabled = False
+                picMonster2.Visible = False
+                picMonster2.Left = 0
+            End If
+            If testcollision(playerRight, picHitbox3) = True Then
+                Timer3.Enabled = False
+                picMonster2.Visible = False
+                picMonster2.Left = 0
+            End If
+            If testcollision(playerLeft, picHitbox3) = True Then
+                Timer3.Enabled = False
+                picMonster2.Visible = False
+                picMonster2.Left = 0
+            End If
+        End If
+        'end monster 3
+        If Mon4kill = 1 Then 'monster 4
+            If testcollision(playerDown, picHitbox4) = True Then
+                Timer3.Enabled = False
+                picMonster2.Visible = False
+                picMonster2.Left = 0
+            End If
+            If testcollision(playerUp, picHitbox4) = True Then
+                Timer3.Enabled = False
+                picMonster2.Visible = False
+                picMonster2.Left = 0
+            End If
+            If testcollision(playerRight, picHitbox4) = True Then
+                Timer3.Enabled = False
+                picMonster2.Visible = False
+                picMonster2.Left = 0
+            End If
+            If testcollision(playerLeft, picHitbox4) = True Then
+                Timer3.Enabled = False
+                picMonster2.Visible = False
+                picMonster2.Left = 0
+            End If
+        End If
+        'end monster 4
     End Sub
     Private Sub picMonster2_Click(sender As Object, e As EventArgs) Handles picMonster2.Click
         Mon2kill = 1
@@ -436,7 +511,7 @@
         Mon1kill = 1
     End Sub
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
-        If picMonster2.Location.Y > 375 Then
+        If picMonster2.Location.Y > 375 Then ' start of monster 2
             picMonster2.Top -= 30
         ElseIf picMonster2.Location.Y < 545 Then
             picMonster2.Top += 175
@@ -446,9 +521,22 @@
         ElseIf picHitbox2.Location.Y < 545 Then
             picHitbox2.Top += 175
         End If
+        ' end of monster 
+        If picMonster3.Location.Y > 375 Then ' start of monster 3
+            picMonster3.Top -= 30
+        ElseIf picMonster3.Location.Y < 545 Then
+            picMonster3.Top += 175
+        End If
+        If picHitbox3.Location.Y > 375 Then
+            picHitbox3.Top -= 30
+        ElseIf picHitbox3.Location.Y < 545 Then
+            picHitbox3.Top += 175
+        End If
+        ' end of monster 
+
     End Sub
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-        If picMonster1.Location.X > 50 Then
+        If picMonster1.Location.X > 50 Then 'monster 1 start
             picMonster1.Left -= 50
         ElseIf picMonster1.Location.X < 300 Then
             picMonster1.Left += 375
@@ -458,5 +546,20 @@
         ElseIf picHitbox1.Location.X < 300 Then
             picHitbox1.Left += 375
         End If
+        'monster 1 end
+        If picMonster4.Location.X > 50 Then 'monster 4 start
+            picMonster4.Left -= 50
+        ElseIf picMonster4.Location.X < 300 Then
+            picMonster4.Left += 375
+        End If
+        If picHitbox4.Location.X > 50 Then
+            picHitbox4.Left -= 50
+        ElseIf picHitbox4.Location.X < 300 Then
+            picHitbox4.Left += 375
+        End If
+        'monster 4 end
+    
+
     End Sub
+
 End Class

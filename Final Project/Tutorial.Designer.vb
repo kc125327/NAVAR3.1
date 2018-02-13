@@ -55,6 +55,11 @@ Partial Class Tutorial
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.picHitbox1 = New System.Windows.Forms.PictureBox()
+        Me.picMonster3 = New System.Windows.Forms.PictureBox()
+        Me.picHitbox3 = New System.Windows.Forms.PictureBox()
+        Me.picMonster4 = New System.Windows.Forms.PictureBox()
+        Me.picHitbox4 = New System.Windows.Forms.PictureBox()
+        Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obsticle2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.obsticle9, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,12 +85,16 @@ Partial Class Tutorial
         CType(Me.playerLeft, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picHitbox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picHitbox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMonster3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picHitbox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picMonster4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picHitbox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 9)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(1244, 739)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -358,12 +367,58 @@ Partial Class Tutorial
         Me.picHitbox1.TabStop = False
         Me.picHitbox1.Visible = False
         '
+        'picMonster3
+        '
+        Me.picMonster3.BackColor = System.Drawing.Color.Transparent
+        Me.picMonster3.Cursor = System.Windows.Forms.Cursors.Cross
+        Me.picMonster3.Image = CType(resources.GetObject("picMonster3.Image"), System.Drawing.Image)
+        Me.picMonster3.Location = New System.Drawing.Point(1079, 173)
+        Me.picMonster3.Name = "picMonster3"
+        Me.picMonster3.Size = New System.Drawing.Size(40, 37)
+        Me.picMonster3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMonster3.TabIndex = 75
+        Me.picMonster3.TabStop = False
+        '
+        'picHitbox3
+        '
+        Me.picHitbox3.Location = New System.Drawing.Point(1003, 113)
+        Me.picHitbox3.Name = "picHitbox3"
+        Me.picHitbox3.Size = New System.Drawing.Size(194, 159)
+        Me.picHitbox3.TabIndex = 76
+        Me.picHitbox3.TabStop = False
+        Me.picHitbox3.Visible = False
+        '
+        'picMonster4
+        '
+        Me.picMonster4.BackColor = System.Drawing.Color.Transparent
+        Me.picMonster4.Cursor = System.Windows.Forms.Cursors.Cross
+        Me.picMonster4.Image = CType(resources.GetObject("picMonster4.Image"), System.Drawing.Image)
+        Me.picMonster4.Location = New System.Drawing.Point(851, 93)
+        Me.picMonster4.Name = "picMonster4"
+        Me.picMonster4.Size = New System.Drawing.Size(40, 37)
+        Me.picMonster4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picMonster4.TabIndex = 77
+        Me.picMonster4.TabStop = False
+        '
+        'picHitbox4
+        '
+        Me.picHitbox4.Location = New System.Drawing.Point(774, 31)
+        Me.picHitbox4.Name = "picHitbox4"
+        Me.picHitbox4.Size = New System.Drawing.Size(194, 159)
+        Me.picHitbox4.TabIndex = 78
+        Me.picHitbox4.TabStop = False
+        Me.picHitbox4.Visible = False
+        '
         'Tutorial
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1228, 701)
+        Me.Controls.Add(Me.picMonster4)
+        Me.Controls.Add(Me.picHitbox4)
+        Me.Controls.Add(Me.picMonster3)
+        Me.Controls.Add(Me.picHitbox3)
         Me.Controls.Add(Me.picMonster1)
         Me.Controls.Add(Me.picHitbox1)
         Me.Controls.Add(Me.picMonster2)
@@ -421,6 +476,10 @@ Partial Class Tutorial
         CType(Me.playerLeft, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picHitbox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picHitbox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMonster3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picHitbox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picMonster4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picHitbox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -456,4 +515,9 @@ Partial Class Tutorial
     Friend WithEvents Timer2 As System.Windows.Forms.Timer
     Friend WithEvents Timer3 As System.Windows.Forms.Timer
     Friend WithEvents picHitbox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents picMonster3 As System.Windows.Forms.PictureBox
+    Friend WithEvents picHitbox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents picMonster4 As System.Windows.Forms.PictureBox
+    Friend WithEvents picHitbox4 As System.Windows.Forms.PictureBox
+    Friend WithEvents Timer4 As System.Windows.Forms.Timer
 End Class
