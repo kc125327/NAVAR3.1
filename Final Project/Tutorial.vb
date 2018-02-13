@@ -430,7 +430,7 @@
         Mon1kill = 1
     End Sub
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
-        If picMonster2.Location.Y > 375 Then
+        If picMonster2.Location.Y > 375 Then ' start of monster 2
             picMonster2.Top -= 30
         ElseIf picMonster2.Location.Y < 545 Then
             picMonster2.Top += 175
@@ -440,7 +440,19 @@
         ElseIf picHitbox2.Location.Y < 545 Then
             picHitbox2.Top += 175
         End If
-        
+        ' end of monster 
+        If picMonster3.Location.Y > 375 Then ' start of monster 3
+            picMonster3.Top -= 30
+        ElseIf picMonster3.Location.Y < 545 Then
+            picMonster3.Top += 175
+        End If
+        If picHitbox3.Location.Y > 375 Then
+            picHitbox3.Top -= 30
+        ElseIf picHitbox3.Location.Y < 545 Then
+            picHitbox3.Top += 175
+        End If
+        ' end of monster 
+
     End Sub
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
         If picMonster1.Location.X > 50 Then 'monster 1 start
@@ -465,6 +477,8 @@
             picHitbox4.Left += 375
         End If
         'monster 4 end
+    
+
     End Sub
 
 End Class

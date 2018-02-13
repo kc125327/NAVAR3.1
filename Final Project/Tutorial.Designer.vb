@@ -393,7 +393,7 @@ Partial Class Tutorial
         Me.picMonster4.BackColor = System.Drawing.Color.Transparent
         Me.picMonster4.Cursor = System.Windows.Forms.Cursors.Cross
         Me.picMonster4.Image = CType(resources.GetObject("picMonster4.Image"), System.Drawing.Image)
-        Me.picMonster4.Location = New System.Drawing.Point(742, 72)
+        Me.picMonster4.Location = New System.Drawing.Point(851, 93)
         Me.picMonster4.Name = "picMonster4"
         Me.picMonster4.Size = New System.Drawing.Size(40, 37)
         Me.picMonster4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -402,7 +402,7 @@ Partial Class Tutorial
         '
         'picHitbox4
         '
-        Me.picHitbox4.Location = New System.Drawing.Point(666, 12)
+        Me.picHitbox4.Location = New System.Drawing.Point(774, 31)
         Me.picHitbox4.Name = "picHitbox4"
         Me.picHitbox4.Size = New System.Drawing.Size(194, 159)
         Me.picHitbox4.TabIndex = 78
